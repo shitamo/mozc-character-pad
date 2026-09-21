@@ -1,4 +1,4 @@
-# mozc-standalone: 文字パレット / 手書き入力パレット
+# mozc-character-pad: 文字パレット / 手書き入力パレット
 
 ## (a) これは何か
 
