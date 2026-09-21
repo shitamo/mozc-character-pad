@@ -1,0 +1,33 @@
+Source: mozc-character-pad
+Section: utils
+Priority: optional
+Maintainer: shitamo <sitamo@gmail.com>
+Build-Depends: debhelper-compat (= 13),
+               cmake,
+               pkg-config,
+               python3,
+               qt6-base-dev,
+               qt6-base-dev-tools,
+               libzinnia-dev
+Standards-Version: 4.6.2
+Homepage: https://github.com/google/mozc
+Rules-Requires-Root: no
+
+Package: mozc-character-pad
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: tegaki-zinnia-japanese
+Description: standalone character palette and handwriting input tools from mozc
+ character_palette and hand_writing are two GUI tools that used to be
+ bundled with Google Japanese Input (mozc), removed from mozc upstream in
+ 2020. This package restores them as standalone tools that do not require
+ the mozc conversion engine (mozc_server) to be installed: selecting a
+ character copies it to the clipboard instead of sending it to mozc_server
+ over IPC.
+ .
+  * character_palette: browse Unicode / Shift-JIS (CP932) / JIS X
+    0201/0208/0212 character tables and pick a character.
+  * hand_writing: recognize hand-drawn characters using the zinnia engine
+    and pick a candidate. Requires a zinnia handwriting model, e.g. from
+    the tegaki-zinnia-japanese package, at
+    /usr/share/tegaki/models/zinnia/handwriting-ja.model.

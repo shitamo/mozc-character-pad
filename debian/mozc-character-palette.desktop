@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Character Palette
+Name[ja]=文字パレット
+Comment=Browse Unicode/Shift-JIS character tables and copy a character
+Comment[ja]=Unicode / Shift-JIS などの文字表から文字を選んでコピーする
+Exec=character_palette
+Icon=accessories-character-map
+Categories=Utility;
+Terminal=false
+StartupNotify=true

@@ -1,0 +1,8 @@
+mozc-character-pad (1.0-1) unstable; urgency=medium
+
+  * Initial release: standalone character_palette / hand_writing tools
+    extracted from mozc (upstream commit afb03ddfe72dde4cf2409863a3bfea160f7a66d8,
+    2018-02-26), with the mozc_server IPC client removed in favor of
+    clipboard copy, and ported to build against Qt6.
+
+ -- Your Name <you@example.com>  Mon, 21 Sep 2026 13:25:00 +0900

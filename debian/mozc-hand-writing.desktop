@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Handwriting Input Palette
+Name[ja]=手書き入力パレット
+Comment=Recognize hand-drawn characters and copy a candidate
+Comment[ja]=手書き文字を認識して候補をコピーする
+Exec=hand_writing
+Icon=input-tablet
+Categories=Utility;
+Terminal=false
+StartupNotify=true

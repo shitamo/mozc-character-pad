@@ -1,0 +1,2 @@
+debian/mozc-character-palette.desktop usr/share/applications
+debian/mozc-hand-writing.desktop usr/share/applications
