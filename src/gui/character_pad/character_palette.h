@@ -38,7 +38,6 @@
 #include "base/port.h"
 #include "gui/character_pad/ui_character_palette.h"
 
-class QTextCodec;
 class QClipboard;
 
 namespace mozc {

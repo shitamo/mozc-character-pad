@@ -32,7 +32,6 @@
 
 #include <QtWidgets/QTableWidget>
 
-class QTextCodec;
 class QTableWidgetItem;
 
 namespace mozc {

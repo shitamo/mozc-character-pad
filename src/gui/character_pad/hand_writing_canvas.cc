@@ -200,8 +200,8 @@ void HandWritingCanvas::mousePressEvent(QMouseEvent *event) {
   }
 
   strokes_.resize(strokes_.size() + 1);
-  const float x = static_cast<float>(event->pos().x()) / width();
-  const float y = static_cast<float>(event->pos().y()) / height();
+  const float x = static_cast<float>(event->position().x()) / width();
+  const float y = static_cast<float>(event->position().y()) / height();
   strokes_.back().push_back(std::make_pair(x, y));
   is_drawing_ = true;
   update();
@@ -212,8 +212,8 @@ void HandWritingCanvas::mouseMoveEvent(QMouseEvent *event) {
     return;
   }
 
-  const float x = static_cast<float>(event->pos().x()) / width();
-  const float y = static_cast<float>(event->pos().y()) / height();
+  const float x = static_cast<float>(event->position().x()) / width();
+  const float y = static_cast<float>(event->position().y()) / height();
   strokes_.back().push_back(std::make_pair(x, y));
   update();
 }

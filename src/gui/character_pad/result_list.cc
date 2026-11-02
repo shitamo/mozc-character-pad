@@ -68,7 +68,7 @@ void ResultList::mouseReleaseEvent(QMouseEvent *event) {
   if (event->button() != Qt::LeftButton) {
     return;
   }
-  const QListWidgetItem *item = itemAt(event->pos());
+  const QListWidgetItem *item = itemAt(event->position().toPoint());
   if (item == NULL) {
     return;
   }
@@ -77,7 +77,7 @@ void ResultList::mouseReleaseEvent(QMouseEvent *event) {
 }
 
 void ResultList::mouseMoveEvent(QMouseEvent *event) {
-  QListWidgetItem *item = itemAt(event->pos());
+  QListWidgetItem *item = itemAt(event->position().toPoint());
   if (item == NULL) {
     return;
   }

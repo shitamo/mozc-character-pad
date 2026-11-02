@@ -50,7 +50,7 @@ void CharacterPaletteTableWidget::mouseReleaseEvent(QMouseEvent *event) {
   if (event->button() != Qt::LeftButton) {
     return;
   }
-  QTableWidgetItem *item = itemAt(event->pos());
+  QTableWidgetItem *item = itemAt(event->position().toPoint());
   if (item == NULL) {
     return;
   }
@@ -59,7 +59,7 @@ void CharacterPaletteTableWidget::mouseReleaseEvent(QMouseEvent *event) {
 }
 
 void CharacterPaletteTableWidget::mouseMoveEvent(QMouseEvent *event) {
-  QTableWidgetItem *item = itemAt(event->pos());
+  QTableWidgetItem *item = itemAt(event->position().toPoint());
   if (item == NULL) {
     return;
   }
